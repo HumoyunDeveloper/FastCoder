@@ -213,7 +213,7 @@ $M({
       snackbar.show("Oops", "O'yinda g'irromlik, qaytadan...", 3);
       setTimeout(function() {
         window.location.reload();
-      }, 3000);
+      }, 0);
     }
   },
   "#reload": {
