@@ -59,7 +59,16 @@ const user = {
 
 const CODES = {
   js: `
-    hi
+    class Person {
+      constructor(_name, _age) {
+        this.name = _name;
+        this.age = _age;
+    }
+    
+      sayHi() {
+        console.log("Hello!");
+      }
+    }
   `,
   py: `
   class Person:
