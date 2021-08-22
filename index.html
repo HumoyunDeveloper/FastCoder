@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastCoder</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <noscript>NO JavaScript!</noscript>
+
+    <div class="__container">
+        <div class="wrapper-xy-center fitxy">
+            <div id="firstCard" class="card">
+                <div class="title">Hush Kelibsiz!</div>
+                <hr />
+                <p class="content">
+                    Ushbu dastur sizning ko'd yozish tezligingizni aniqlab beradi, Shunchaki ismingizni kiriting va
+                    o'yinda qatnashing va tez orada eng tezkor 3ta KODERlar <b>@HumoyunDeveloperProjects</b> telegram
+                    kanalida e'lon qilinadi.
+                </p>
+                <button id="nextBtn" class="button">Keyingisi</button>
+            </div>
+            <div id="secondCard" class="card none">
+                <div class="title">FastCoder</div>
+                <hr />
+                <p>Ismingiz:</p>
+                <input id="userName" style="font-family: Poppins;" class="fullwidth" type="text"
+                    placeholder="Ismingizni kiriting..." />
+                <p>Dasturlash Tilini tanlang:</p>
+                <select id="prefLang" class="fullwidth">
+                    <option value="js">JavaScript</option>
+                    <option value="py">Python</option>
+                    <option value="java">Java</option>
+                </select>
+                <p class="error"></p>
+                <button id="startBtn" class="button">Boshla</button>
+            </div>
+            <div id="thirdCard" class="card none">
+                <div class="title"><span style="color: #099;">F</span>ast<span style="color: #099;">C</span>oder</div>
+                <hr />
+                <code class="javascript" id="shouldType">
+
+                </code>
+                <textarea spellcheck="false" name="code" id="codeArea" cols="30" rows="10"
+                    placeholder="Ko'dni shu yerga yozing..."></textarea>
+                <button class="button" id="finishButton" disabled>Tayyor</button>
+            </div>
+            <div class="card none" id="fourthCard">
+                <div class="title">Natijalar</div>
+                <hr>
+                <b><p class="content" id="whom"></p></b>
+                <select id="filter" class="fullwidth">
+                    <option value="kaki">Katta Kichik</option>
+                    <option value="random" selected>Tasodifiy</option>
+                </select>
+                <table class="content" >
+                    <tr><th>N</th>
+                    <th>D/T</th>
+                    <th>Vaqt</th>
+   
+                    <th>Sana</th></tr>
+                    <tbody id="result">
+
+                    </tbody>
+                </table>
+                <button id="reload" class="button">Qaytadan</button>
+                <br/>
+                <p style="font-size: 13px; color: #999;">Created By Humoyun Dev</p>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    <div class="timechecker none">0</div>
+
+    <script src="./my_libs/design.js"></script>
+    <script src="./my_libs/Snackbar.js"></script>
+    <script src="./my_libs/mod.min.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
